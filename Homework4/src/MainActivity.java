@@ -7,6 +7,7 @@ public class MainActivity {
 		String username;
 		byte tenDollarTicketCount;
 		byte twentyDollarTicketCount;
+		short total;
 		
 		reader = new Scanner(System.in);
 		
@@ -40,6 +41,7 @@ public class MainActivity {
 		if(twentyDollarTicketCount != 1) {
 			System.out.print("s");
 		}
-		System.out.print(", that will be $" + (10 * tenDollarTicketCount + 20 * twentyDollarTicketCount) + " total.");
+		total = (short) (tenDollarTicketCount * 10 + twentyDollarTicketCount * 20);
+		System.out.print(", that will be $" + total + " total.");
 	}
 }
