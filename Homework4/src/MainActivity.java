@@ -1,11 +1,14 @@
 import java.util.Scanner;
 
 public class MainActivity {
+	private static Scanner reader;
+
 	public static void main(String args[]) {
-		Scanner reader = new Scanner(System.in);
 		String username;
 		byte tenDollarTicketCount;
 		byte twentyDollarTicketCount;
+		
+		reader = new Scanner(System.in);
 		
 		System.out.println("Welcome to homework 4.");
 		System.out.println("Homework 4 is a highly advanced ticket-ordering software.");
