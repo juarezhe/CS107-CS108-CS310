@@ -16,6 +16,7 @@ public class MainActivity {
 		z = 6;
 		System.out.println("z " + z + "!!!");
 
+		@SuppressWarnings("unused")
 		int y = 100;
 
 	}
