@@ -31,17 +31,18 @@ public class MainActivity {
 			System.out.print("How many $10 tickets would you like? ");
 			twentyDollarTicketCount = reader.nextByte();
 		}
+		total = (short) (tenDollarTicketCount * 10 + twentyDollarTicketCount * 20);
 		
 		System.out.println("\nThank you for your order, " + username + ".");
-		System.out.print("For (" + tenDollarTicketCount + ") $10 ticket");
-		if(tenDollarTicketCount != 1) {
-			System.out.print("s");
-		}
-		System.out.print(" and (" + twentyDollarTicketCount + ") $20 ticket");
-		if(twentyDollarTicketCount != 1) {
-			System.out.print("s");
-		}
-		total = (short) (tenDollarTicketCount * 10 + twentyDollarTicketCount * 20);
+		System.out.print("For (" + tenDollarTicketCount + ") $10 " + checkForPlural(tenDollarTicketCount));
+		System.out.print(" and (" + twentyDollarTicketCount + ") $20 " + checkForPlural(twentyDollarTicketCount));
 		System.out.print(", that will be $" + total + " total.");
+	}
+	
+	private static String checkForPlural(byte number) {
+		if (number == 1)		
+			return "ticket";
+		else
+			return "tickets";
 	}
 }
