@@ -4,23 +4,23 @@ public class ArrayStack {
 	
 	//private Object[] btsarr = new Object[100];
 	//private ArrayList<Object> btsarr = new ArrayList<Object>(0);
-	private ArrayList<Object> btsarr;
-	private int topidx;
+	private ArrayList<Object> btsarr; //holds stack items
+	private int topidx; //indexes the top-most (and most recent) stack item
 	
-	public ArrayStack() {
+	public ArrayStack() { //constructor - only default is required
 		//this.btsarr = new Object[100];
-		this.btsarr = new ArrayList<Object>(0);
-		this.topidx = -1;
+		this.btsarr = new ArrayList<Object>(0); //initialize with zero stack items
+		this.topidx = -1; //initialize to reflect no items on the stack
 	}
 	
-	public void push(Object x) {
-		if (this.size() ==  100) {
+	public void push(Object x) { //pushes new item onto the stack
+		if (this.size() ==  100) { //limit stack items to 100
 			System.out.println("Out of space!");
 		}
 		else {
-			this.topidx++;
+			this.btsarr.add(x); //add item to the stack
+			this.topidx++; //point to the newly added item 
 			//this.btsarr[this.topidx] = x;
-			this.btsarr.add(x);
 		}
 	}
 	
@@ -73,4 +73,4 @@ public class ArrayStack {
 			return "No items in array.";
 		}
 	}
-}
+} //class
