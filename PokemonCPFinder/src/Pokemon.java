@@ -27,6 +27,6 @@ public class Pokemon {
 	}
 	
 	public String toString() {
-		return "[" + this.name + ", " + this.form + ", " + this.type1 + ", " + this.type2 + ", " + this.health + ", " + this.attack + ", " + this.defense + "]";
+		return this.name + ", " + this.form + ", " + this.type1 + ", " + this.type2 + ", " + this.health + ", " + this.attack + ", " + this.defense;
 	}
 }

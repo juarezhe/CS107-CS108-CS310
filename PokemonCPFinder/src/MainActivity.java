@@ -42,7 +42,7 @@ public class MainActivity {
 				//System.out.println(curr.name + "," + curr.form + "," + cp + "," + (double) level / 2 + "," + hpIV + "," + atkIV + "," + defIV);
 				if (cp < 1500) break;
 			}
-			writer.println(curr.name + "," + curr.form + "," + curr.type1 + "," + curr.type2 + "," + cp + "," + (double) level / 2 + "," + hpIV + "," + atkIV + "," + defIV + "," + curr.quickMove.toString() + "," + curr.chargeMove.toString());
+			writer.println(curr.toString() + "," + cp + "," + (double) level / 2 + "," + hpIV + "," + atkIV + "," + defIV + "," + curr.quickMove.toString() + "," + curr.chargeMove.toString());
 		}
 		writer.close();
 	}
