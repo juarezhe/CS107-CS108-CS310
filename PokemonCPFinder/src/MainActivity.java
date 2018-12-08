@@ -25,7 +25,7 @@ public class MainActivity {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		writer.println("name,form,type1,type2,cp,level,hp,atk,def,quick,type,pwr,nrg,dur,charge,type,pwr,nrg,dur");
+		writer.println("name,form,type1,type2,hp,atk,def,cp,level,hpIV,atkIV,defIV,quick,type,pwr,nrg,dur,charge,type,pwr,nrg,dur");
 		
 		for (int n = 0; n < pokemonList.size(); n++) {
 			Pokemon curr = pokemonList.get(n);
