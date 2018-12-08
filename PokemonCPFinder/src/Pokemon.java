@@ -4,6 +4,16 @@ public class Pokemon {
 	int health, attack, defense;
 	Move quickMove, chargeMove;
 	
+	public Pokemon(String name, String form, String type1, String type2, int hp, int atk, int def) {
+		this.name = name;
+		this.form = form;
+		this.type1 = type1;
+		this.type2 = type2;
+		this.health = hp;
+		this.attack = atk;
+		this.defense = def;
+	}
+	
 	public Pokemon(String name, String form, String type1, String type2, int hp, int atk, int def, Move quickMove, Move chargeMove) {
 		this.name = name;
 		this.form = form;
