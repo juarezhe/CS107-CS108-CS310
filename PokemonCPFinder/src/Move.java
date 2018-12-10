@@ -12,6 +12,7 @@ public class Move {
 	}
 	
 	public String toString() {
+		// writer.println("name,form,type1,type2,hp,atk,def,cp,level,hpIV,atkIV,defIV,quick,type,pwr,nrg,dur,charge,type,pwr,nrg,dur");
 		return this.mName + "," + this.mType + "," + this.mPower + "," + this.mEnergy + "," + this.mDuration;
 	}
 }
